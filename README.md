@@ -5,4 +5,4 @@ This project has two apps:
 - `backend` (Express API)
 - `frontend` (React + Vite)
 
-[live-sandbox](https://65jgzz-3001.csb.app/)
+[live-sandbox](https://3m33jf-3001.csb.app/)
