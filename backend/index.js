@@ -20,7 +20,7 @@ app.use(
   ),
 );
 
-app.use(express.static(__dirname));
+app.use(express.static("dist"));
 
 let notes = [
   {
@@ -40,7 +40,7 @@ function generateId() {
 }
 
 app.get("/", (req, res) => {
-  res.send("hello, world");
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 app.get("/api/notes", (req, res) => {
   res.json(notes);

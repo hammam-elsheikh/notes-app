@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = import.meta.env.VITE_API_URL || "/api/notes";
+const baseUrl = "/api/notes";
 
 async function getAll() {
   const res = await axios.get(baseUrl);
